@@ -3,7 +3,9 @@
 # UNRN Andina - Introducción a la Ingenieria en Computación
 ################
 
+
 def anagrama(cadena1, cadena2):
+
     palabra1 = list(cadena1.lower())
     palabra2 = list(cadena2.lower())
 
@@ -17,16 +19,19 @@ def anagrama(cadena1, cadena2):
 
 
 def principal():
-    cadena1 = input('Ingrese texto 1: ')
-    cadena2 = input('Ingrese texto 2: ')
+    texto1 = input('Ingrese palabra 1: ')
+    texto2 = input('Ingrese palabra 2: ')
+
+    cadena1 = texto1.replace(" ", "")
+    cadena2 = texto2.replace(" ", "")
 
     resultado = anagrama(cadena1, cadena2)
 
     if resultado:
-        print(f'{cadena1} y {cadena2} son un anagrama')
+        print(f'{texto1} y {texto2} son un anagrama')
     else:
-        print(f'{cadena1} y {cadena2} no son un anagrama')
+        print(f'{texto1} y {texto2} no son un anagrama')
+
 
 if __name__ == "__main__":
     principal()
-
