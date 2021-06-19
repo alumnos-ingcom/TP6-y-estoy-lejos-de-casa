@@ -3,7 +3,7 @@
 # UNRN Andina - Introducción a la Ingenieria en Computación
 ################
 
-from tp6eje1 import anagrama
+from tp6ej1 import anagrama
 
 
 def obtener_palabras(linea):
