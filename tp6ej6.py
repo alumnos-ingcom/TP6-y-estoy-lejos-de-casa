@@ -7,7 +7,6 @@ def hace_etiqueta(contenido, etiqueta):
     return '<%s>%s</%s>' %(etiqueta, contenido, etiqueta)
 
 def crear_pagina():
-    p='p'
     body= 'body'
     encabezado = hace_etiqueta('Hola HTML', 'h1')
     encabezado2=hace_etiqueta(' Párrafo', 'p')
