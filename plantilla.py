@@ -8,7 +8,6 @@
 
 
 def principal():
-    """Toda la interacción con el usuario va acá"""
     pass
 
 if __name__ == "__main__":
